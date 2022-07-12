@@ -3,7 +3,6 @@ package com.sgu.leetcode.jzoffer;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.LinkedList;
 
 /**
  * @Author T-T强
@@ -40,7 +39,7 @@ public class JZLeetCode09 {
 
     Deque<Integer> in,out;
 
-    public CQueue() {
+    public JZLeetCode09() {
         in=new ArrayDeque<Integer>();
         out=new ArrayDeque<Integer>();
     }
