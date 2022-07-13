@@ -63,7 +63,7 @@ public class JZLeetCode30 {
     Deque<Integer> xStack;
     Deque<Integer> minStack;
 
-    public MinStack() {
+    public JZLeetCode30() {
         xStack = new LinkedList<Integer>();
         minStack = new LinkedList<Integer>();
         minStack.push(Integer.MAX_VALUE);
