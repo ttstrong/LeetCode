@@ -13,7 +13,7 @@ public class LeetCode93 {
       inorder(root, res);
       return res;
     }
-    public void inorder(TreeNode root,List<Integer> res){
+    public void inorder(TreeNode root, List<Integer> res){
         if (root==null){
             return;
         }
