@@ -12,7 +12,7 @@ public class JZLeetCode53 {
     //统计一个数字在排序数组中出现的次数。
     //输入: nums = [5,7,7,8,8,10], target = 8
     //输出: 2
-    //思路：二分法
+    //思路：二分法修改
 
     public int search(int[] nums, int target) {
 //        int count=0;
