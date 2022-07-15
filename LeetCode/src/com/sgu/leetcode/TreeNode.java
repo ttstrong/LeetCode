@@ -2,7 +2,7 @@ package com.sgu.leetcode;
 
 /**
  * @Author T-T强
- * @Date 2022/7/6 14:41
+ * @Date 2022/7/15 14:44
  */
 public class TreeNode {
     int val;
@@ -16,7 +16,7 @@ public class TreeNode {
         this.val = val;
     }
 
-    TreeNode(int val, TreeNode left, TreeNode right) {
+    TreeNode(int val,TreeNode left,TreeNode right) {
         this.val = val;
         this.left = left;
         this.right = right;
