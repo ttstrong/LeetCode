@@ -14,6 +14,7 @@ public class JZLeetCode48 {
         Set<Character> set = new HashSet<>();
         while (r < s.length()) {
             char c = s.charAt(r++);
+            //如果遇到重复的字符，则清空set。
             while (set.contains(c)) {
                 set.remove(s.charAt(l++));
             }
