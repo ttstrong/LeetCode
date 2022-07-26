@@ -12,6 +12,7 @@ public class JZLeetCode12 {
     // 同一个单元格内的字母不允许被重复使用。
     //输入：board = [["A","B","C","E"],["S","F","C","S"],["A","D","E","E"]], word = "ABCCED"
     //输出：true
+    //深度优先搜索遍历
     public boolean exist(char[][] board, String word) {
         char[] words = word.toCharArray();
         // 遍历图
