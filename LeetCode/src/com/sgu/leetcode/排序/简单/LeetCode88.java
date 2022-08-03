@@ -1,4 +1,4 @@
-package com.sgu.leetcode;
+package com.sgu.leetcode.排序.简单;
 
 /**
  * @Author T-T强

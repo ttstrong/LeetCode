@@ -1,9 +1,5 @@
-package com.sgu.leetcode;
+package com.sgu.leetcode.排序.简单;
 
-
-import javax.sound.midi.Soundbank;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * @Author T-T强

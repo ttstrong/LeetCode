@@ -1,4 +1,4 @@
-package com.sgu.leetcode;
+package com.sgu.leetcode.排序.简单;
 
 import java.util.HashSet;
 import java.util.Set;
