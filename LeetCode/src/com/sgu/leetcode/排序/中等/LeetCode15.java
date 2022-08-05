@@ -26,7 +26,7 @@ public class LeetCode15 {
                 } else if (sum > 0) {
                     while(i < j && nums[j] == nums[--j]);//右指针后退并去重
                 } else {
-                    res.add(new ArrayList<Integer>(Arrays.asList(nums[k], nums[i], nums[j])));
+                    res.add(new ArrayList<>(Arrays.asList(nums[k], nums[i], nums[j])));
                     while(i < j && nums[i] == nums[++i]);//左指针前进并去重
                     while(i < j && nums[j] == nums[--j]);//右指针后退并去重
                 }
