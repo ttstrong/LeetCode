@@ -13,8 +13,6 @@ public class LeetCode2 {
     请你将两个数相加，并以相同形式返回一个表示和的链表。
     你可以假设除了数字 0 之外，这两个数都不会以 0 开头。
     */
-
-
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         //定义一个新联表伪指针，用来指向头指针，返回结果
         ListNode prev = new ListNode(0);

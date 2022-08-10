@@ -44,7 +44,7 @@ public class Singleton{
 //    }
 
     /**
-     * 双重校验锁-线程安全
+     * 懒汉式-双重校验锁-线程安全
      */
     private volatile static Singleton Instance;
     private Singleton(){}
