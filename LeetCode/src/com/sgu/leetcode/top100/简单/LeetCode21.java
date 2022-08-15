@@ -12,19 +12,19 @@ public class LeetCode21 {
     //输入：l1 = [1,2,4], l2 = [1,3,4]
     //输出：[1,1,2,3,4,4]
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode prehead=new ListNode(-1);
-        ListNode prev=prehead;
-        while (l1!=null && l2!=null){
-            if (l1.val<l2.val){
-                prev.next=l1;
-                l1=l1.next;
-            }else {
-                prev.next=l2;
-                l2=l2.next;
+        ListNode prehead = new ListNode(-1);
+        ListNode prev = prehead;
+        while (l1 != null && l2 != null) {
+            if (l1.val < l2.val) {
+                prev.next = l1;
+                l1 = l1.next;
+            } else {
+                prev.next = l2;
+                l2 = l2.next;
             }
-            prev=prev.next;
+            prev = prev.next;
         }
-        prev.next=l1 == null?l2:l1;
+        prev.next = l1 == null ? l2 : l1;
         return prehead.next;
     }
 }
