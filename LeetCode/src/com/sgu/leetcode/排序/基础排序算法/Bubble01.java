@@ -15,19 +15,24 @@ public class Bubble01 {
         }
     }
 
-    static void bubbleSort(int[] array) {
-        int emp = 0;
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < (array.length - 1) - i; j++) {
-                //前面的元素 array[j] 后面的元素 array[j+1]
-                if (array[j] > array[j+1]){
-                    //交换它们
-                    emp = array[j];
-                    array[j] = array[j+1];
-                    array[j+1] = emp;
+    static void bubbleSort(int[] arr) {
+        int tmp = 0;
+        //标志位，如果一次交换都没有，直接退出
+        boolean flag = false;
+        if (arr.length <= 1) return;
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < (arr.length - 1) - i; j++) {
+                flag = true;
+                if (arr[j] > arr[j + 1]) {
+                    flag = false;
+                    tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
                 }
             }
+            //只要有一组排序内，数组已经有序，就不进行接下来的所有排序。
+            if (flag) break;
         }
-
     }
 }
