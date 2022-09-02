@@ -1,7 +1,5 @@
 package com.sgu.leetcode;
 
-import java.util.Deque;
-
 /**
  * @Author T-T强
  * @Date 2022/7/6 15:44
@@ -22,7 +20,7 @@ public class LeetCode104 {
         }else {
             int leftHeight=maxDepth(root.left);
             int rightHeight=maxDepth(root.right);
-            return Math.max(leftHeight, rightHeight);
+            return Math.max(leftHeight, rightHeight)+1;
         }
     }
 
