@@ -31,7 +31,8 @@ public class Insert01 {
             //如果左边的这个元素比当前元素大，当前元素就需要左移，直到左边的数比它小
             while (preIndex >= 0 && array[preIndex] > insertVal) {
                 //被比较的元素右移，腾出位置
-                array[preIndex+1] = array[preIndex];
+                array[preIndex+1] =
+                        array[preIndex];
                 //当前元素左移
                 preIndex--;
             }
@@ -41,6 +42,5 @@ public class Insert01 {
             }
 
         }
-
     }
 }
